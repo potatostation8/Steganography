@@ -6,10 +6,14 @@ import java.io.File;
 import java.io.IOException;
 import javax.imageio.ImageIO;
 import java.awt.Color;
+import java.util.*;
 
 public class Steg {
-  public static void main (String [] args) {
-    BufferedImage sample = null;		
+	public static void main (String [] args) {
+  	
+		Scanner kr = new Scanner (System.in);
+	
+  		BufferedImage sample = null;		
 		try {
 			sample = ImageIO.read (new File("./sample.bmp"));
 		} catch (IOException e) {};
@@ -32,5 +36,5 @@ public class Steg {
 				System.out.println ("B " + c.getBlue() );
 			}		
 		}
-  }
+	}
 }  
