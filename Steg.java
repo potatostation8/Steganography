@@ -8,10 +8,19 @@ import javax.imageio.ImageIO;
 import java.awt.Color;
 import java.util.*;
 
-public class Steg {
-	public static void main (String [] args) {
-  	
-		Scanner user = new Scanner (System.in);
+public class Steg extends JFrame {
+	
+	int windowHeight = 675;
+	int windowWidth = 725;
+	
+	
+	
+  	public static void main (String [] args) {
+  		
+  		Steg window = new Steg();
+  		
+  		
+		Scanner kr = new Scanner (System.in);
 	
   		BufferedImage sample = null;		
 		try {
@@ -35,17 +44,15 @@ public class Steg {
 				System.out.print ("G " + c.getGreen() + ", ");
 				System.out.println ("B " + c.getBlue() );
 			}		
-		}
-        
-        class Image extends JFrame {
-            public static 
-            
-            public Image (){
-                setTitle ("Test");
-                setSize (w, h);
-                
-              
-            }
-        }
+		}   
+	}
+	
+	public Steg () {
+		super("Fuck Steganography");
+		setDefaultCloseOperation(EXIT_ON_CLOSE);
+		pack();
+		setVisible(true);
+		setBounds(0,0,windowWidth, windowHeight);
 	}
 }
+//Pixel at 36, 137 is the best pixel
