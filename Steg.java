@@ -11,7 +11,7 @@ import java.util.*;
 public class Steg {
 	public static void main (String [] args) {
   	
-		Scanner kr = new Scanner (System.in);
+		Scanner user = new Scanner (System.in);
 	
   		BufferedImage sample = null;		
 		try {
@@ -36,5 +36,16 @@ public class Steg {
 				System.out.println ("B " + c.getBlue() );
 			}		
 		}
+        
+        class Image extends JFrame {
+            public static 
+            
+            public Image (){
+                setTitle ("Test");
+                setSize (w, h);
+                
+              
+            }
+        }
 	}
-}  
+}
